@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F31BD5971E6C732F003DE032 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31BD5961E6C732F003DE032 /* MapKit.framework */; };
+		F31BD5991E6C7334003DE032 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31BD5981E6C7334003DE032 /* CoreLocation.framework */; };
+		F31BD5A11E6C9AE2003DE032 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31BD5A01E6C9AE2003DE032 /* DetailsViewController.swift */; };
+		F31BD5A51E6CA79B003DE032 /* LocationPinAnnotaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31BD5A41E6CA79B003DE032 /* LocationPinAnnotaion.swift */; };
+		F31BD5A71E6CA94A003DE032 /* ATMInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31BD5A61E6CA94A003DE032 /* ATMInfo.swift */; };
+		F31BD5A91E6DAEA2003DE032 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31BD5A81E6DAEA2003DE032 /* Constants.swift */; };
+		F32615001E6C6D6D002BCD6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32614FF1E6C6D6D002BCD6A /* AppDelegate.swift */; };
+		F32615051E6C6D6D002BCD6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32615031E6C6D6D002BCD6A /* Main.storyboard */; };
+		F32615071E6C6D6D002BCD6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32615061E6C6D6D002BCD6A /* Assets.xcassets */; };
+		F326150A1E6C6D6D002BCD6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32615081E6C6D6D002BCD6A /* LaunchScreen.storyboard */; };
+		F32615151E6C6D6D002BCD6A /* ATMLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32615141E6C6D6D002BCD6A /* ATMLocatorTests.swift */; };
+		F32615201E6C6D6D002BCD6A /* ATMLocatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326151F1E6C6D6D002BCD6A /* ATMLocatorUITests.swift */; };
+		F326152E1E6C6DA9002BCD6A /* ATMMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326152D1E6C6DA9002BCD6A /* ATMMapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F32615111E6C6D6D002BCD6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F32614F41E6C6D6D002BCD6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F32614FB1E6C6D6D002BCD6A;
+			remoteInfo = ATMLocator;
+		};
+		F326151C1E6C6D6D002BCD6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F32614F41E6C6D6D002BCD6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F32614FB1E6C6D6D002BCD6A;
+			remoteInfo = ATMLocator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F31BD5961E6C732F003DE032 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F31BD5981E6C7334003DE032 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F31BD5A01E6C9AE2003DE032 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		F31BD5A41E6CA79B003DE032 /* LocationPinAnnotaion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPinAnnotaion.swift; sourceTree = "<group>"; };
+		F31BD5A61E6CA94A003DE032 /* ATMInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMInfo.swift; sourceTree = "<group>"; };
+		F31BD5A81E6DAEA2003DE032 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F32614FC1E6C6D6D002BCD6A /* ATMLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATMLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32614FF1E6C6D6D002BCD6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F32615041E6C6D6D002BCD6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F32615061E6C6D6D002BCD6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F32615091E6C6D6D002BCD6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F326150B1E6C6D6D002BCD6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F32615101E6C6D6D002BCD6A /* ATMLocatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATMLocatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32615141E6C6D6D002BCD6A /* ATMLocatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMLocatorTests.swift; sourceTree = "<group>"; };
+		F32615161E6C6D6D002BCD6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F326151B1E6C6D6D002BCD6A /* ATMLocatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATMLocatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F326151F1E6C6D6D002BCD6A /* ATMLocatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMLocatorUITests.swift; sourceTree = "<group>"; };
+		F32615211E6C6D6D002BCD6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F326152D1E6C6DA9002BCD6A /* ATMMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMMapViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F32614F91E6C6D6D002BCD6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31BD5991E6C7334003DE032 /* CoreLocation.framework in Frameworks */,
+				F31BD5971E6C732F003DE032 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F326150D1E6C6D6D002BCD6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32615181E6C6D6D002BCD6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F31BD5951E6C732F003DE032 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F31BD5981E6C7334003DE032 /* CoreLocation.framework */,
+				F31BD5961E6C732F003DE032 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F32614F31E6C6D6D002BCD6A = {
+			isa = PBXGroup;
+			children = (
+				F32614FE1E6C6D6D002BCD6A /* ATMLocator */,
+				F32615131E6C6D6D002BCD6A /* ATMLocatorTests */,
+				F326151E1E6C6D6D002BCD6A /* ATMLocatorUITests */,
+				F32614FD1E6C6D6D002BCD6A /* Products */,
+				F31BD5951E6C732F003DE032 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F32614FD1E6C6D6D002BCD6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F32614FC1E6C6D6D002BCD6A /* ATMLocator.app */,
+				F32615101E6C6D6D002BCD6A /* ATMLocatorTests.xctest */,
+				F326151B1E6C6D6D002BCD6A /* ATMLocatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F32614FE1E6C6D6D002BCD6A /* ATMLocator */ = {
+			isa = PBXGroup;
+			children = (
+				F32614FF1E6C6D6D002BCD6A /* AppDelegate.swift */,
+				F32615031E6C6D6D002BCD6A /* Main.storyboard */,
+				F32615061E6C6D6D002BCD6A /* Assets.xcassets */,
+				F32615081E6C6D6D002BCD6A /* LaunchScreen.storyboard */,
+				F326150B1E6C6D6D002BCD6A /* Info.plist */,
+				F326152D1E6C6DA9002BCD6A /* ATMMapViewController.swift */,
+				F31BD5A01E6C9AE2003DE032 /* DetailsViewController.swift */,
+				F31BD5A41E6CA79B003DE032 /* LocationPinAnnotaion.swift */,
+				F31BD5A61E6CA94A003DE032 /* ATMInfo.swift */,
+				F31BD5A81E6DAEA2003DE032 /* Constants.swift */,
+			);
+			path = ATMLocator;
+			sourceTree = "<group>";
+		};
+		F32615131E6C6D6D002BCD6A /* ATMLocatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				F32615141E6C6D6D002BCD6A /* ATMLocatorTests.swift */,
+				F32615161E6C6D6D002BCD6A /* Info.plist */,
+			);
+			path = ATMLocatorTests;
+			sourceTree = "<group>";
+		};
+		F326151E1E6C6D6D002BCD6A /* ATMLocatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F326151F1E6C6D6D002BCD6A /* ATMLocatorUITests.swift */,
+				F32615211E6C6D6D002BCD6A /* Info.plist */,
+			);
+			path = ATMLocatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F32614FB1E6C6D6D002BCD6A /* ATMLocator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32615241E6C6D6D002BCD6A /* Build configuration list for PBXNativeTarget "ATMLocator" */;
+			buildPhases = (
+				F32614F81E6C6D6D002BCD6A /* Sources */,
+				F32614F91E6C6D6D002BCD6A /* Frameworks */,
+				F32614FA1E6C6D6D002BCD6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ATMLocator;
+			productName = ATMLocator;
+			productReference = F32614FC1E6C6D6D002BCD6A /* ATMLocator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F326150F1E6C6D6D002BCD6A /* ATMLocatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32615271E6C6D6D002BCD6A /* Build configuration list for PBXNativeTarget "ATMLocatorTests" */;
+			buildPhases = (
+				F326150C1E6C6D6D002BCD6A /* Sources */,
+				F326150D1E6C6D6D002BCD6A /* Frameworks */,
+				F326150E1E6C6D6D002BCD6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F32615121E6C6D6D002BCD6A /* PBXTargetDependency */,
+			);
+			name = ATMLocatorTests;
+			productName = ATMLocatorTests;
+			productReference = F32615101E6C6D6D002BCD6A /* ATMLocatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F326151A1E6C6D6D002BCD6A /* ATMLocatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F326152A1E6C6D6D002BCD6A /* Build configuration list for PBXNativeTarget "ATMLocatorUITests" */;
+			buildPhases = (
+				F32615171E6C6D6D002BCD6A /* Sources */,
+				F32615181E6C6D6D002BCD6A /* Frameworks */,
+				F32615191E6C6D6D002BCD6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F326151D1E6C6D6D002BCD6A /* PBXTargetDependency */,
+			);
+			name = ATMLocatorUITests;
+			productName = ATMLocatorUITests;
+			productReference = F326151B1E6C6D6D002BCD6A /* ATMLocatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F32614F41E6C6D6D002BCD6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Aparna Revu";
+				TargetAttributes = {
+					F32614FB1E6C6D6D002BCD6A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y659FDTV8N;
+						ProvisioningStyle = Automatic;
+					};
+					F326150F1E6C6D6D002BCD6A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F32614FB1E6C6D6D002BCD6A;
+					};
+					F326151A1E6C6D6D002BCD6A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F32614FB1E6C6D6D002BCD6A;
+					};
+				};
+			};
+			buildConfigurationList = F32614F71E6C6D6D002BCD6A /* Build configuration list for PBXProject "ATMLocator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F32614F31E6C6D6D002BCD6A;
+			productRefGroup = F32614FD1E6C6D6D002BCD6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F32614FB1E6C6D6D002BCD6A /* ATMLocator */,
+				F326150F1E6C6D6D002BCD6A /* ATMLocatorTests */,
+				F326151A1E6C6D6D002BCD6A /* ATMLocatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F32614FA1E6C6D6D002BCD6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F326150A1E6C6D6D002BCD6A /* LaunchScreen.storyboard in Resources */,
+				F32615071E6C6D6D002BCD6A /* Assets.xcassets in Resources */,
+				F32615051E6C6D6D002BCD6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F326150E1E6C6D6D002BCD6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32615191E6C6D6D002BCD6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F32614F81E6C6D6D002BCD6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31BD5A51E6CA79B003DE032 /* LocationPinAnnotaion.swift in Sources */,
+				F326152E1E6C6DA9002BCD6A /* ATMMapViewController.swift in Sources */,
+				F31BD5A71E6CA94A003DE032 /* ATMInfo.swift in Sources */,
+				F32615001E6C6D6D002BCD6A /* AppDelegate.swift in Sources */,
+				F31BD5A11E6C9AE2003DE032 /* DetailsViewController.swift in Sources */,
+				F31BD5A91E6DAEA2003DE032 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F326150C1E6C6D6D002BCD6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32615151E6C6D6D002BCD6A /* ATMLocatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32615171E6C6D6D002BCD6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32615201E6C6D6D002BCD6A /* ATMLocatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F32615121E6C6D6D002BCD6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F32614FB1E6C6D6D002BCD6A /* ATMLocator */;
+			targetProxy = F32615111E6C6D6D002BCD6A /* PBXContainerItemProxy */;
+		};
+		F326151D1E6C6D6D002BCD6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F32614FB1E6C6D6D002BCD6A /* ATMLocator */;
+			targetProxy = F326151C1E6C6D6D002BCD6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F32615031E6C6D6D002BCD6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F32615041E6C6D6D002BCD6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F32615081E6C6D6D002BCD6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F32615091E6C6D6D002BCD6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F32615221E6C6D6D002BCD6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F32615231E6C6D6D002BCD6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F32615251E6C6D6D002BCD6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y659FDTV8N;
+				INFOPLIST_FILE = ATMLocator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aparna.ATMLocator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F32615261E6C6D6D002BCD6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y659FDTV8N;
+				INFOPLIST_FILE = ATMLocator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aparna.ATMLocator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F32615281E6C6D6D002BCD6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ATMLocatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aparna.ATMLocatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ATMLocator.app/ATMLocator";
+			};
+			name = Debug;
+		};
+		F32615291E6C6D6D002BCD6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ATMLocatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aparna.ATMLocatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ATMLocator.app/ATMLocator";
+			};
+			name = Release;
+		};
+		F326152B1E6C6D6D002BCD6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ATMLocatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aparna.ATMLocatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ATMLocator;
+			};
+			name = Debug;
+		};
+		F326152C1E6C6D6D002BCD6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ATMLocatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aparna.ATMLocatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ATMLocator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F32614F71E6C6D6D002BCD6A /* Build configuration list for PBXProject "ATMLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32615221E6C6D6D002BCD6A /* Debug */,
+				F32615231E6C6D6D002BCD6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32615241E6C6D6D002BCD6A /* Build configuration list for PBXNativeTarget "ATMLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32615251E6C6D6D002BCD6A /* Debug */,
+				F32615261E6C6D6D002BCD6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32615271E6C6D6D002BCD6A /* Build configuration list for PBXNativeTarget "ATMLocatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32615281E6C6D6D002BCD6A /* Debug */,
+				F32615291E6C6D6D002BCD6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F326152A1E6C6D6D002BCD6A /* Build configuration list for PBXNativeTarget "ATMLocatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F326152B1E6C6D6D002BCD6A /* Debug */,
+				F326152C1E6C6D6D002BCD6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F32614F41E6C6D6D002BCD6A /* Project object */;
+}
